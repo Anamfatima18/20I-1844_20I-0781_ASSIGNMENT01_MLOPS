@@ -29,3 +29,6 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# This is the Flask application for predicting something based on the trained model.
