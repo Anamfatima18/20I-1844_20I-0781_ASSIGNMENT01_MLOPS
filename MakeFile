@@ -1,0 +1,14 @@
+# Define Docker image name
+IMAGE_NAME=myflaskapp
+
+build:
+	docker build -t $(IMAGE_NAME) .
+
+run:
+	docker run -p 5000:5000 $(IMAGE_NAME)
+
+push:
+	# Here you'd add commands to tag and push your image to a Docker registry
+	echo "Docker push not implemented in this Makefile snippet"
+
+.PHONY: build run push
